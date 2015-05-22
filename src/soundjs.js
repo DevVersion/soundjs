@@ -7,13 +7,41 @@
         $element.css("display", "none");
         $element.attr("autoplay", "autoplay");
 
-        this.play = function(path, repeat) {
-            if (path !== null) $element.attr("src", path);
-            $dom.loop = (repeat !== null && repeat ? true : false);
+        this.setPath = function(path) {
+            $element.attr("src", path);
+        };
+
+        this.getPath = function() {
+            return $element.attr("src");
+        };
+
+        this.setVolume = function(volume) {
+            $dom.volume = volume;
+        };
+
+        this.getVolume = function() {
+            return $dom.volume;
+        };
+
+        this.setRepeat = function(repeat) {
+            $dom.loop = repeat;
+        };
+
+        this.isRepeated = function() {
+            return $dom.loop;
+        };
+
+        this.setCallback = function(func) {
+            $element.bind("ended", function() {
+                func();
+            });
+        };
+
+        this.play = function() {
             $dom.play();
         };
 
-        this.stop = function() {
+        this.pause = function() {
             $dom.pause();
         };
     };

@@ -8,14 +8,18 @@
 
 </body>
 
-<link rel="stylesheet" type="text/css" href="index.css">
 <script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
 <script src="../dist/soundjs.min.js" type="text/javascript"></script>
 
 <script>
 
     var soundjs = new SoundJS();
-    soundjs.play("sound.mp3", false);
+    soundjs.setPath("sound.mp3");
+    soundjs.setVolume(1);
+    soundjs.setCallback(function() {
+       alert("The Sound ended!");
+    });
+    soundjs.play();
 
 </script>
 
