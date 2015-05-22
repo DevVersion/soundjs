@@ -16,7 +16,6 @@
         this.stop = function() {
             $dom.pause();
         };
-
     };
 
 }());
