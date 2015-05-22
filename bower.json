@@ -1,0 +1,17 @@
+{
+  "name": "sidebar.js",
+  "version": "0.1",
+  "authors": [
+    "PaulGap <paulgschwendtner@me.com>"
+  ],
+  "description": "Sidebar Effects JS",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
