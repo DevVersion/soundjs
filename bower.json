@@ -6,7 +6,7 @@
   ],
   "description": "Play Sound Files easily in JS",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
