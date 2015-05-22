@@ -1,10 +1,10 @@
 {
-  "name": "sidebar.js",
+  "name": "soundjs",
   "version": "0.1",
   "authors": [
     "PaulGap <paulgschwendtner@me.com>"
   ],
-  "description": "Sidebar Effects JS",
+  "description": "Play Sound Files easily in JS",
   "license": "MIT",
   "private": true,
   "ignore": [

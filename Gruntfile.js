@@ -4,9 +4,14 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-clean");
+    grunt.loadNpmTasks("grunt-contrib-jshint");
 
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
+
+        jshint: {
+            scripts: ["Gruntfile.js", "src/**/*.js"]
+        },
 
         copy: {
             scripts: {
@@ -19,6 +24,7 @@ module.exports = function (grunt) {
 
         uglify: {
             options: {
+                sourceMap: true,
                 mangle: false
             },
             scripts: {
@@ -47,6 +53,6 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask("default", ["clean", "copy", "uglify"]);
+    grunt.registerTask("default", ["jshint", "clean", "copy", "uglify"]);
 
 };

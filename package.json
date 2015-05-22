@@ -1,8 +1,8 @@
 {
-  "name": "sidebar",
+  "name": "soundjs",
   "version": "0.0.1",
-  "description": "",
-  "main": "src/sidebar.js",
+  "description": "Play Sound Files easily in JS",
+  "main": "src/soundjs.js",
   "author": "PaulGap <paulgschwendtner@me.com>",
   "license": "MIT",
   "devDependencies": {
